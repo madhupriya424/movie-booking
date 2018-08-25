@@ -1,0 +1,18 @@
+<mat-card style="min-height:1000px">
+  <mat-card style="min-height: 600px">
+    <mat-card-title>Select Movies in {{this.service.currentCity}}:</mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-list>
+      <mat-list-item *ngFor="let movie of movies"> 
+        {{movie.movieName}} 
+        <button style="position: absolute; right:0; bottom:0; margin-bottom: 10px; margin-right: 10px"
+        mat-raised-button color="primary"  routerLink="/home/{{selected}}">
+        Show Threatre
+       </button>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+      
+      
+     </mat-list>
+  </mat-card>
+</mat-card>
